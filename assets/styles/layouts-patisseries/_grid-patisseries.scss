@@ -1,0 +1,74 @@
+.grid-patisserie {
+    width: 75%;
+    margin: 0 auto 50px;
+    
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style: none;
+        gap: 20px;
+        
+        .photo-patisserie {
+            position: relative;
+            background: rgb(247, 246, 249);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            h2 {
+                font-family: 'rockwell';
+                font-weight: 300;
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            .infos-patisserie {
+                position: absolute;
+                width: 100%;
+                height: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                background: white;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+
+
+
+            }
+
+            li {
+                width: 100%;
+               position: relative;
+
+                i {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 150%;
+                }
+
+                h2 {
+                    text-transform: uppercase;
+                    color: black;
+
+                }
+
+                p {
+                    font-weight: 400;
+                    color: black;
+                }
+            }
+        }
+
+
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+
+}

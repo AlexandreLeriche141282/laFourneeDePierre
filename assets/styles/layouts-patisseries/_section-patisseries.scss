@@ -1,0 +1,41 @@
+.section-patisserie{
+    .presentation-patisserie{
+     display: grid;
+    grid-template-columns:70% 30%;
+    width: 75%;
+    margin: 50px auto;  
+    .text-patisserie{
+        text-align: left;
+        padding-right: 50px;
+        p{
+            padding-bottom: 20px;
+            letter-spacing: 2px;
+            line-height: 25px;
+            
+            span{
+                font-weight: 900;
+                color: black;
+            }
+        }
+        h1{
+            padding-bottom: 20px;
+            font-size:calc(1.5rem + 4vw);
+            font-family: 'rockwell';
+            letter-spacing: 5px;
+            font-weight: 400;
+        }
+    }
+    .img-patisserie{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        img{
+            width: 100%;
+        } 
+    }
+
+}
+
+    
+    
+}

@@ -1,0 +1,14 @@
+footer{
+   .map{
+    display: grid;
+    grid-template-columns:1fr;
+   //  gap: 20px;
+    width: 100%;
+    justify-items: center;
+    background: black;
+    
+   }
+   .map iframe{
+margin:25px;
+   }
+}
