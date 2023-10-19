@@ -24,3 +24,8 @@ window.addEventListener("scroll", () => {
     }
 });
 
+// Caler sur la date du jour
+const today = new Date().toISOString().split("T")[0]
+commande_date.value = today;
+commande_date.min = today;
+
