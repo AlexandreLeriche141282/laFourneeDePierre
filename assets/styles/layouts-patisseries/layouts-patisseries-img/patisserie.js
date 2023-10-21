@@ -1,4 +1,4 @@
-// Apparition AppareilPhoto-----------
+// Apparition AppareilPhoto-----------------------
 
 const AppareilPhoto = document.querySelector('.partage-photo');
 
@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => {
 
 });
 
-//Apparition de nos valeurs------------------
+//Apparition de nos valeurs------------------------
 
 const NosValeurs = document.querySelector('.nos-valeurs');
 
@@ -24,28 +24,31 @@ window.addEventListener("scroll", () => {
     }
 });
 
+// Caler sur la date du jour---------------------------
+const today = new Date().toISOString().split("T")[0]
+commande_date.value = today;
+commande_date.min = today;
 
+
+// Calcul prix -----------------------------------------
 let size = 0;
 let quantity = 0;
 
 const update_price = () => {
-    let price = size * quantity;
-
-    // if (isNaN(price)) throw new Error("Le prix n'est pas correct.");
-    // if (price <= 0) throw new Error("Le prix est inférieur à zéro...");
+let price = size * quantity;
 
     document.getElementById('total').innerText = size * quantity;
 };
 
 document.getElementById('size').addEventListener('change', (e) => {
-    let new_size = parseFloat(e.currentTarget.value);
+    let new_size = parseFloat(e.currentTarget.value).toFixed(2);
     size = new_size;
 
     update_price();
 });
 
 document.getElementById('quantity').addEventListener('change', (e) => {
-    let new_quantity = parseFloat(e.currentTarget.value);
+    let new_quantity = parseFloat(e.currentTarget.value).toFixed(2);
     quantity = new_quantity;
 
     update_price();
