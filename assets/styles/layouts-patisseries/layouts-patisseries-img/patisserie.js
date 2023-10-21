@@ -7,25 +7,49 @@ window.addEventListener("scroll", () => {
     if (scrollValue > 0.45) {
         AppareilPhoto.style.visibility = "visible";
         AppareilPhoto.style.opacity = "1";
-        AppareilPhoto.style.marginLeft="65px";
+        AppareilPhoto.style.marginLeft = "65px";
     }
-    console.log(scrollValue);
+
 });
-  
+
 //Apparition de nos valeurs------------------
 
 const NosValeurs = document.querySelector('.nos-valeurs');
 
 window.addEventListener("scroll", () => {
     let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight;
-    if (scrollValue >0.30) {
+    if (scrollValue > 0.30) {
         NosValeurs.style.visibility = "visible";
         NosValeurs.style.opacity = "1";
     }
 });
 
-// Caler sur la date du jour
-const today = new Date().toISOString().split("T")[0]
-commande_date.value = today;
-commande_date.min = today;
+
+let size = 0;
+let quantity = 0;
+
+const update_price = () => {
+    let price = size * quantity;
+
+    // if (isNaN(price)) throw new Error("Le prix n'est pas correct.");
+    // if (price <= 0) throw new Error("Le prix est inférieur à zéro...");
+
+    document.getElementById('total').innerText = size * quantity;
+};
+
+document.getElementById('size').addEventListener('change', (e) => {
+    let new_size = parseFloat(e.currentTarget.value);
+    size = new_size;
+
+    update_price();
+});
+
+document.getElementById('quantity').addEventListener('change', (e) => {
+    let new_quantity = parseFloat(e.currentTarget.value);
+    quantity = new_quantity;
+
+    update_price();
+});
+
+
 

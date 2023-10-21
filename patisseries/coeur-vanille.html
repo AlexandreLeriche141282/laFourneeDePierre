@@ -52,45 +52,47 @@
         <div class="border"></div>
     </header>
     <section class="img1">
-        
-          <img src="../assets/img/petit gateau.jpg" alt="petit gateau">  
+
+        <img src="../assets/img/petit gateau.jpg" alt="petit gateau">
         <div class="container-img1">
             <h1>Coeur vanille</h1>
-            <p>Craquez pour notre délicieuse pâtisserie. Inspirée de la traditionnelle pâtisserie française, cette version revisitée va vous émerveiller. Son fond d’amande sur pâte sucrée et sa gelée de cassis sauront vous régaler.<br>Cette pâtisserie est déclinée en plusieurs parts.</p>
+            <p>Craquez pour notre délicieuse pâtisserie. Inspirée de la traditionnelle pâtisserie française, cette
+                version revisitée va vous émerveiller. Son fond d’amande sur pâte sucrée et sa gelée de cassis sauront
+                vous régaler.<br>Cette pâtisserie est déclinée en plusieurs parts.</p>
 
             <div class="form-inputs">
-              <select name="" id="Taille">
-                <option value="Taille">Taille</option>
-                <option value="individuelle">individuelle</option>
-                <option value="4 pers">4 personnes</option>
-                <option value="6 pers">6 personnes</option>
-                <option value="8 pers">8 personnes</option>
-              </select>
-              <select name="" id="quantité">
-                <option value="">Quantité</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-              </select>
+                <select id="size">
+                    <option value="0">Taille</option>
+                    <option value="2.95">individuelle</option>
+                    <option value="12">4 personnes</option>
+                    <option value="18">6 personnes</option>
+                    <option value="24">8 personnes</option>
+                </select>
+                <select id="quantity">
+                    <option value="0">Quantité</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="date" id="commande_date" />
 
-              <input type="date" id="commande_date" />
-              
-              
+
             </div>
             <div class="panier">
-            <input type="submit" value="AJOUTER AU PANIER" /> 
-              <p>2.95 €</p>
+                <input type="submit" value="AJOUTER AU PANIER" />
+                <p>Total : <span id="total"></span> €</p>
             </div>
-            
+
         </div>
         
+
     </section>
     <section class="section1">
 
