@@ -39,6 +39,17 @@ left:0;
     }
     .container-img1{
         text-align: left;
+        #balise{
+            color :rgb(197,152,96);
+            border-radius : 55px;
+            font-size : calc(0.7rem + 0.8vw);
+            
+        } 
+        .addBasket{
+            left:0;
+            margin-top:30px;
+            font-weight: 800;
+        }
     }
     h1{
         font-size:calc(1rem + 3vw);
@@ -70,4 +81,8 @@ left:0;
    
     }
 
+}
+
+#text{
+    color:white;
 }

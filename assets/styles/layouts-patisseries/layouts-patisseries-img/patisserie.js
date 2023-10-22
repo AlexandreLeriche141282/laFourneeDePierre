@@ -35,24 +35,44 @@ let size = 0;
 let quantity = 0;
 
 const update_price = () => {
-let price = size * quantity;
-
+    let price = size * quantity;
+    
     document.getElementById('total').innerText = size * quantity;
+    document.querySelector('.panier').addEventListener("click", myFunction);
+
+
+    function myFunction() {
+    document.getElementById('valid').innerText = "alaex"    
+    }
 };
 
 document.getElementById('size').addEventListener('change', (e) => {
-    let new_size = parseFloat(e.currentTarget.value).toFixed(2);
+    let new_size = parseFloat(e.currentTarget.value);
     size = new_size;
 
     update_price();
 });
 
 document.getElementById('quantity').addEventListener('change', (e) => {
-    let new_quantity = parseFloat(e.currentTarget.value).toFixed(2);
+    let new_quantity = parseFloat(e.currentTarget.value);
     quantity = new_quantity;
 
     update_price();
 });
+
+// Texte ajout de produits au panier
+let textQuantity = document.querySelector('.fa-basket-shopping')
+document.getElementById('valid').addEventListener('click', function () {
+    if (quantity > 1) {
+     document.getElementById('balise').innerHTML=`${quantity} "Coeur Vanille" ont été ajoutés à votre panier.`;   
+    } else {
+        document.getElementById('balise').innerHTML = `${quantity} "Coeur Vanille" a été ajouté à votre panier.`; 
+        
+    }
+    
+})
+
+
 
 
 

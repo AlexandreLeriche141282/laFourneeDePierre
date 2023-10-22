@@ -867,6 +867,16 @@ header .menu-nav ul {
 .img1 .container-img1 {
   text-align: left;
 }
+.img1 .container-img1 #balise {
+  color: rgb(197, 152, 96);
+  border-radius: 55px;
+  font-size: calc(0.7rem + 0.8vw);
+}
+.img1 .container-img1 .addBasket {
+  left: 0;
+  margin-top: 30px;
+  font-weight: 800;
+}
 .img1 h1 {
   font-size: calc(1rem + 3vw);
   font-family: "rockwell";
@@ -901,4 +911,8 @@ header .menu-nav ul {
   margin: 20px 0;
   border: none;
   border-bottom: 1px solid #b6b6b6;
+}
+
+#text {
+  color: white;
 }/*# sourceMappingURL=index.css.map */
