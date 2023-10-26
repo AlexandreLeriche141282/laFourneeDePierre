@@ -16,11 +16,11 @@
             h2 {
                 font-family: 'rockwell';
                 font-weight: 300;
-                font-size: 2rem;
+                font-size: calc(9px + 1vw);
             }
 
             p {
-                font-size: 1.1rem;
+                font-size: calc(8px + 1vw); 
             }
 
             .infos-patisserie {

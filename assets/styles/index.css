@@ -397,12 +397,11 @@ header .menu-nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
+  height: 6vh;
   width: 91%;
 }
 .section1 .container-rs .reseau-sociaux {
   width: 200px;
-  margin-bottom: 50px;
 }
 .section1 .container-rs .reseau-sociaux i {
   font-size: 50px;
@@ -710,6 +709,65 @@ header .menu-nav ul {
   header .container-nav {
     width: 100%;
   }
+  header #side-bar {
+    position: absolute;
+    width: 355px;
+    height: 100vh;
+    padding-top: 100px;
+    background: #bf9660;
+    top: 0;
+    left: -355px;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    z-index: 4;
+  }
+  header .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 365px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
+  header .toggle-btn span {
+    width: 60px;
+    height: 5px;
+    border-radius: 5px;
+    background: #bf9660;
+    display: block;
+    margin-top: 4px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  header .active {
+    left: 0 !important;
+  }
+  header .active span {
+    position: absolute;
+  }
+  header .active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header .active span:nth-child(2) {
+    opacity: 0;
+  }
+  header .active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header .active ~ .container-nav {
+    opacity: 0.3;
+  }
+  header .menu-nav li {
+    line-height: 50px;
+  }
+  header .menu-nav a {
+    font-size: 1rem;
+  }
+  header .menu-nav a:hover {
+    color: white;
+  }
 }
 
 .section-patisserie .presentation-patisserie {
@@ -770,10 +828,10 @@ header .menu-nav ul {
 .grid-patisserie ul .photo-patisserie h2 {
   font-family: "rockwell";
   font-weight: 300;
-  font-size: 2rem;
+  font-size: calc(9px + 1vw);
 }
 .grid-patisserie ul .photo-patisserie p {
-  font-size: 1.1rem;
+  font-size: calc(8px + 1vw);
 }
 .grid-patisserie ul .photo-patisserie .infos-patisserie {
   position: absolute;

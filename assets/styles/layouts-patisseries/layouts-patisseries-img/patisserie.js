@@ -1,3 +1,17 @@
+// Side Bar
+const sidebar = document.getElementById("side-bar")
+const containerNav = document.querySelector(".container-nav")
+
+
+btn.addEventListener('click', () => {
+    sidebar.classList.toggle("active");
+})
+
+containerNav.addEventListener("click", () => {
+    sidebar.classList.remove("active")
+    
+})
+
 // Apparition AppareilPhoto-----------------------
 
 const AppareilPhoto = document.querySelector('.partage-photo');

@@ -139,5 +139,64 @@ header {
             .container-nav{
                 width: 100%;
             }
+            #side-bar {
+                position: absolute;
+                width: 355px;
+                height: 100vh;
+                padding-top: 100px;
+                background: #bf9660;
+                top: 0;
+                left: -355px;
+                transition: 0.5s ease-out;
+                z-index: 4;
+              }
+              .toggle-btn {
+                position: absolute;
+                top: 30px;
+                left: 365px;
+                cursor: pointer;
+                height: 50px;
+                width: 50px;
+              }
+              .toggle-btn span {
+                width: 60px;
+                height: 5px;
+                border-radius: 5px;
+                background:#bf9660;
+                display: block;
+                margin-top: 4px;
+                transition: 0.3s ease;
+              }
+              .active {
+                left:0!important; 
+               }
+               .active span{
+                 position: absolute;
+               }
+               .active span:nth-child(1){
+                 transform: rotate(45deg);
+               }
+               .active span:nth-child(2){
+                 opacity: 0;
+               }
+               .active span:nth-child(3){
+                 transform: rotate(-45deg);
+               }
+               .active ~ .container-nav{
+                opacity:0.3;
+              }
+              .menu-nav{
+                li{
+                    line-height: 50px;
+                }
+                a{
+                    font-size: 1rem;
+                &:hover{
+                    color: white;
+                }
+                }
+              }
     }
 }
+
+

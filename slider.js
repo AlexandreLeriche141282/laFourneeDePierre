@@ -1,3 +1,18 @@
+// Side Bar
+const sidebar = document.getElementById("side-bar")
+const containerNav = document.querySelector(".container-nav")
+
+
+btn.addEventListener('click', () => {
+    sidebar.classList.toggle("active");
+})
+
+containerNav.addEventListener("click", () => {
+    sidebar.classList.remove("active")
+    
+})
+
+
 // Slider Images--------------------
 
 let img__slider = document.getElementsByClassName('img__slider');
@@ -48,7 +63,7 @@ const AppareilPhoto = document.querySelector('.partage-photo');
 // let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight;
 window.addEventListener("scroll", () => {
     let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight;
-    if (scrollValue > 0.4) {
+    if (scrollValue > 0.40) {
         AppareilPhoto.style.visibility = "visible";
         AppareilPhoto.style.opacity = "1";
         AppareilPhoto.style.marginLeft="105px";
@@ -62,7 +77,7 @@ const NosValeurs = document.querySelector('.nos-valeurs');
 
 window.addEventListener("scroll", () => {
     let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight;
-    if (scrollValue >0.33) {
+    if (scrollValue >0.30) {
         NosValeurs.style.visibility = "visible";
         NosValeurs.style.opacity = "1";
 
