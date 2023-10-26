@@ -711,12 +711,12 @@ header .menu-nav ul {
   }
   header #side-bar {
     position: absolute;
-    width: 355px;
+    width: 310px;
     height: 100vh;
     padding-top: 100px;
     background: #bf9660;
     top: 0;
-    left: -355px;
+    left: -310px;
     -webkit-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
     z-index: 4;
@@ -724,7 +724,7 @@ header .menu-nav ul {
   header .toggle-btn {
     position: absolute;
     top: 30px;
-    left: 365px;
+    left: 320px;
     cursor: pointer;
     height: 50px;
     width: 50px;
@@ -828,10 +828,10 @@ header .menu-nav ul {
 .grid-patisserie ul .photo-patisserie h2 {
   font-family: "rockwell";
   font-weight: 300;
-  font-size: calc(9px + 1vw);
+  font-size: calc(8px + 1vw);
 }
 .grid-patisserie ul .photo-patisserie p {
-  font-size: calc(8px + 1vw);
+  font-size: calc(6px + 1vw);
 }
 .grid-patisserie ul .photo-patisserie .infos-patisserie {
   position: absolute;
