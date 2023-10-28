@@ -87,6 +87,11 @@ document.getElementById('valid').addEventListener('click', function () {
 })
 
 
+document.getElementById("valid").addEventListener('click',()=> {
+    confetti();
+})
+
+
 
 
 
