@@ -53,6 +53,10 @@ $color1: rgb(166, 114, 69);
   padding: 0;
   box-sizing: border-box;
 }
+*::selection{
+  background: rgb(197,152,96);
+  color: white;
+}
 
 body {
   text-align: center;
@@ -64,7 +68,7 @@ body {
   a ,a:visited{
     text-decoration: none;
     color:black;
-    font-size:calc(0.3rem + 0.5vw);
+    font-size:calc(0.6rem + 0.5vw);
     list-style: none;
     font-family:$font2;
     &:hover{

@@ -171,20 +171,19 @@ header {
             display: flex;
             justify-content: center;
             justify-content: space-between;
-            // padding-left: 20px;
+            
 
             span {
                 display: block;
-                margin-top: 20px;
-                font-size: 0.4rem;
-                letter-spacing: 4px;
+                margin: 20px 5px;
+                font-size:calc(0.1rem + 0.5vw);
+                letter-spacing: 1px;
             }
 
             i {
                 cursor: pointer;
-                color: black;
-                font-weight: 700;
-
+                color: rgb(0, 0, 0);
+                
                 &:hover {
                     color: rgb(233, 206, 155);
 
