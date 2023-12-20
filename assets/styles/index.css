@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Allura";
-  src: url(../fonts/Allura-Regular.ttf);
-}
-@font-face {
   font-family: "Poppins";
   src: url(../fonts/Poppins-Medium.ttf);
 }
@@ -22,6 +18,10 @@
 @font-face {
   font-family: "rockwell";
   src: url(../fonts/Rockwell.ttf);
+}
+@font-face {
+  font-family: "dragor";
+  src: url(../fonts/dragor.ttf);
 }
 * {
   margin: 0;
@@ -42,7 +42,6 @@
 
 body {
   text-align: center;
-  font-family: Roboto, serif;
   background: white;
   list-style: none;
 }
@@ -176,7 +175,7 @@ header .container-nav {
   padding-top: 30px;
 }
 header .container-nav .title-header h1 {
-  font-family: Allura, cursive;
+  font-family: "dragor";
   font-size: calc(2rem + 5vw);
   color: rgb(0, 0, 0);
   font-weight: 100;
@@ -225,8 +224,8 @@ header .container-nav .title-header h2 {
 }
 header .container-nav .logo img {
   width: 40%;
-  -webkit-box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.45);
-          box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 header .container-nav .links-header {
   display: -webkit-box;
@@ -631,7 +630,7 @@ header .container-nav .logo img {
           box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.45);
 }
 header .container-nav h1 {
-  font-family: Allura, cursive;
+  font-family: Roboto, serif;
   font-size: 6rem;
   color: rgba(0, 0, 0, 0.336);
   font-weight: 100;

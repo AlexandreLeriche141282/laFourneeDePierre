@@ -1,7 +1,7 @@
-@font-face {
-  font-family: "Allura";
-  src: url(../fonts/Allura-Regular.ttf);
-}
+// @font-face {
+//   font-family: "Allura";
+//   src: url(../fonts/Allura-Regular.ttf);
+// }
 
 @font-face {
   font-family: "Poppins";
@@ -24,6 +24,10 @@
   font-family: 'rockwell';
   src:url(../fonts/Rockwell.ttf)
 }
+@font-face{
+  font-family: 'dragor';
+  src:url(../fonts/dragor.ttf)
+}
 
 $font1: Allura,
 cursive;
@@ -35,7 +39,7 @@ $white:white;
 $black: #21201e;
 $grey: rgb(182, 182, 182);
 $color1: rgb(166, 114, 69);
-
+$fontTitre:dragor,serif;
 @mixin childCenter {
   display: flex;
   justify-content: space-between;
@@ -60,7 +64,6 @@ $color1: rgb(166, 114, 69);
 
 body {
   text-align: center;
-  font-family: $font3;
   background: white;
   list-style: none;
   

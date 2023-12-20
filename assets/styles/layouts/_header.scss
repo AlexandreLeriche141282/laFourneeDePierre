@@ -119,7 +119,7 @@ header {
         padding-top: 30px;
         .title-header{
          h1 {
-            font-family: $font1;
+            font-family: "dragor";
             font-size:calc(2rem + 5vw);
             color: rgb(0, 0, 0);
             font-weight: 100;
@@ -156,8 +156,7 @@ header {
 
         .logo img {
             width: 40%;
-            box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.45);
-
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             @mixin parentCenter {
                 width: 85%;
                 margin: 0 auto;
